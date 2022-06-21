@@ -1,37 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
 
-    <!-- Top left corner -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS</title>
+</head>
 
-    <!-- Top right corner -->
+<body>
+  <!-- Positioning -->
+  <div class="relative w-1/2 h-12 bg-red-200">
+    <p>Parent Element</p>
+    <div class="absolute bottom-0 right-0 bg-red-500">
+      <p>Abosolute Child</p>
+    </div>
+  </div>
 
-    <!-- Bottom left corner -->
+  <!-- Top left corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
 
-    <!-- Bottom right corner -->
+    </div>
+  </div>
 
-    <!-- Span top edge -->
+  <!-- Top right corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">
 
-    <!-- Span left edge -->
+    </div>
+  </div>
 
-    <!-- Span right edge -->
+  <!-- Bottom left corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300">
 
-    <!-- Span bottom edge -->
+    </div>
+  </div>
 
-    <!-- Display Classes -->
+  <!-- Bottom right corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+    </div>
+  </div>
 
-    <!-- Z-Index -->
 
-    <!-- Floats -->
-  </body>
+  <!-- Span top edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300">
+    </div>
+  </div>
+
+  <!-- Span left edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300">
+    </div>
+  </div>
+
+  <!-- Span right edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300">
+    </div>
+  </div>
+
+  <!-- Span bottom edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300">
+    </div>
+  </div>
+
+  <!-- Display Classes -->
+
+  <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptatum quas facilis explicabo optio <span
+      class="inline font-bold">This is inline</span> ores possimus debitis har<span class="inline-block font-bold">This
+      is inline
+      block</span>
+    molestias odio necessitatibus possimus! Dolores possimus debitis harum dolorum, fuga nihil ratione quia dicta dolore
+    hic quibusdam esse, itaque ducimus veritatis<span class="block font-bold">This is block</span> cum obcaecati
+    molestias
+    aspernatur labore laborum voluptatem culpa
+    quidem. Debitis fuga cumque dignis<span class="hidden font-bold">This is hidden</span>simos veniam, minus officiis
+    fugiat quos
+    cupiditate tempore sunt quaerat, beatae
+    ipsa dolores.</div>
+
+  <!-- Z-Index -->
+  <div class="relative h-36">
+    <div class="absolute left-10 w-24 h-24 bg-blue-300 z-40">1</div>
+    <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+    <div class="absolute left-40 w-24 h-24 bg-blue-500 z-10">3</div>
+    <div class="absolute left-60 w-24 h-24 bg-blue-600 z-20">4</div>
+    <div class="absolute left-80 w-24 h-24 bg-blue-700 z-30">5</div>
+  </div>
+  <div class="w-1/2">
+    <img class="h-48 w-48 float-left m-4" src="../assets/img/img1.jpg" alt="">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dicta, magni voluptates, nam sunt deleniti ea
+      nisi obcaecati excepturi sint officiis eius velit quos illo id. Eaque magnam accusamus modi?</p>
+  </div>
+  <!-- Floats -->
+
+</body>
+
 </html>
 
 <!-- Position Classes
